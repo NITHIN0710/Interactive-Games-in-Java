@@ -26,7 +26,11 @@ public class SimpleCalculator {
                     break;
 
                 case '/':
-                    System.out.println(n1 + " / " + n2 + " = " + (n1 / n2));
+                    if (n2 != 0) {
+                        System.out.println(n1 + " / " + n2 + " = " + (n1 / n2));
+                    } else {
+                        System.out.println("Error! Division by Zero!");
+                    }
                     break;
 
                 case '%':
@@ -34,7 +38,7 @@ public class SimpleCalculator {
                     break;
 
                 default:
-                    System.out.println("Invalid Numbers. Please enter valid numbers");
+                    System.out.println("Invalid operation. Please enter +, -, *, /, or %.");
             }
             sc.nextLine();
             System.out.print("Do you want to continue (yes/no): ");

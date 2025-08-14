@@ -18,7 +18,7 @@ public class RockPaperScissor {
                 System.out.println("Round " + round + " of 5");
                 System.out.print("Enter rock or paper or scissors: ");
 
-                String playerChoice = sc.next().toLowerCase();
+                String playerChoice = sc.next().trim().toLowerCase();
 
                 boolean valid = false;
                 for (String str : options) {
